@@ -1,0 +1,108 @@
+<html>
+<head>
+  <title>Pendaftaran Kursus</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      margin: 0px;
+    }
+    .header {
+      background-color: #87CEEB;
+      text-align: center;
+      border: black solid 1px;
+      padding: 20px;
+    }
+    .header h1 {
+      color: red;
+      margin: 0;
+    }
+    .data-diri {
+      font-size: 20px;
+      border: black solid 1px;
+      background-color: #808080;
+      padding: 15px;
+    }
+    .data-diri table {
+      border-collapse: collapse;
+    }
+    .data-diri td {
+      vertical-align: top;
+    }
+    .komentar {
+      border: black solid 1px;
+      background-color: #CD5C5C;
+      padding: 15px;
+    }
+    .tombol {
+      padding: 10px 15px;
+    }
+    input[type="text"],
+    input[type="email"] {
+      width: 150px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Pendaftaran Kursus</h1>
+  </div>
+  <div class="data-diri">
+    <b>Data Diri</b>
+    <br><br>
+    <table>
+      <tr>
+        <td>Nama</td>
+        <td><input type="text" name="nama"></td>
+      </tr>
+      <tr>
+        <td>Nim</td>
+        <td><input type="text" name="nim"></td>
+      </tr>
+      <tr>
+        <td>E-mail</td>
+        <td><input type="email" name="email"></td>
+      </tr>
+      <tr>
+        <td>Tanggal Lahir</td>
+        <td><input type="text" name="tgl_lahir" placeholder="hh/bb/tttt"></td>
+      </tr>
+      <tr>
+        <td>Jenis Kelamin</td>
+        <td>
+          <input type="radio" name="jk" value="L"> Laki-laki <br>
+          <input type="radio" name="jk" value="P"> Perempuan
+        </td>
+      </tr>
+      <tr>
+        <td>Pilih Program Kursus</td>
+        <td>
+          <input type="checkbox" name="kursus" value="csharp"> C# <br>
+          <input type="checkbox" name="kursus" value="java"> Java <br>
+          <input type="checkbox" name="kursus" value="sql"> SQL <br>
+          <input type="checkbox" name="kursus" value="html_php"> HTML dan PHP
+        </td>
+      </tr>
+      <tr>
+        <td>Pilihan Hari/Jam Kursus</td>
+        <td>
+          <select name="jadwal">
+            <option>Senin - Rabu/09.00 - 11.00</option>
+            <option>Selasa - Kamis/09.00 - 11.00</option>
+            <option>Jumat - Minggu/13.00 - 15.00</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="komentar">
+    <label>Komentar Anda</label> <br>
+    <textarea rows="5" cols="70" name="komentar"></textarea>
+  </div>
+  <div class="tombol">
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+    <input type="button" value="Cancel">
+  </div>
+</body>
+</html>
